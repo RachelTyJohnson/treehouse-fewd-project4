@@ -1,0 +1,15 @@
+.btn--default {
+  @include button(map-get($buttoncolors, 'default'));
+}
+.btn--success {
+  @include button(map-get($buttoncolors, 'success'));
+}
+.btn--error {
+  @include button(map-get($buttoncolors, 'error'));
+}
+.btn--warning {
+  @include button(map-get($buttoncolors, 'warning'));
+}
+.btn--info {
+  @include button(map-get($buttoncolors, 'info'));
+}

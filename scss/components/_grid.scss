@@ -1,0 +1,35 @@
+.container{
+  margin:$gutter;
+}
+.grid__row {
+  @include createflexbox($wrap:wrap);
+  margin-bottom:40px;
+  >*{
+    width:100%;
+    padding:15px;
+    margin:3px auto;
+    border-radius:$borderradius;
+  }
+}
+
+.grid__col--3.theme__colors {}
+
+.grid__col--4 {}
+
+.grid__col--5 {}
+
+.grid__col--6 {}
+
+.grid__col--7 {}
+
+.grid__col--8 {}
+
+.grid__col--9 {}
+
+.grid__col--10 {}
+
+.grid__col--11 {}
+
+.grid__col--12 {}
+
+.centered {}

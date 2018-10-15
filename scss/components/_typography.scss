@@ -1,0 +1,34 @@
+.container{
+  font-family:$font-primary;
+  color:map-get($brandcolors,'content');
+  font-size:1.1em;
+  line-height:1.3;
+}
+
+.link{
+  text-decoration: none;
+  color: map-get($brandcolors, 'link');
+  font-weight:bold;
+  &:hover{
+    text-decoration: overline underline;
+  }
+}
+
+.blockquote{
+  font-family:$font-quote;
+  border-left: 3px solid map-get($brandcolors,'primary');
+  padding-left:20px;
+  margin-left:$indent;
+  margin-right:10px;
+  font-size:1.4em;
+}
+
+.headline--primary{
+  color:map-get($brandcolors,'primary');
+  margin-left: $indent;
+}
+
+.headline--secondary{
+  font-weight:300;
+  margin-bottom:15px;
+}

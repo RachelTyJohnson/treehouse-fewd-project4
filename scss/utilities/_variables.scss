@@ -1,7 +1,7 @@
 //********************************************************
 // Fonts
 //********************************************************
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800');
 @import url('https://fonts.googleapis.com/css?family=Kavivanar');
 $font-primary: 'Raleway', sans-serif;
 $font-quote: 'Kavivanar', cursive;
@@ -11,6 +11,13 @@ $font-quote: 'Kavivanar', cursive;
 //********************************************************
 $navbreak:768px;
 
+
+//********************************************************
+// Spacing
+//********************************************************
+$gutter:40px;
+$indent:20px;
+$borderradius:5px;
 
 //********************************************************
 // Colors

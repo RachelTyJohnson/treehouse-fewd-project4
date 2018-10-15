@@ -3,7 +3,7 @@
 //********************************************************
 @mixin createflexbox(
   $display:flex,
-  $diretion:null,
+  $direction:null,
   $wrap:null,
   $justify:null
 ){
@@ -11,6 +11,7 @@
   flex-direction:$direction;
   flex-wrap:$wrap;
   justify-content:$justify;
+  @content;
 }
 
 
@@ -20,5 +21,22 @@
 @mixin mq($breakpoint){
   @media (min-width: $breakpoint){
     @content;
+  }
+}
+
+//********************************************************
+// Media Query Mixin
+//********************************************************
+@mixin button($color){
+  width:100%;
+  text-transform: uppercase;
+  padding:10px;
+  border:none;
+  border-radius:$borderradius;
+  color:white;
+  font-weight:bold;
+  background:$color;
+  +*{
+    margin-top:20px;
   }
 }
