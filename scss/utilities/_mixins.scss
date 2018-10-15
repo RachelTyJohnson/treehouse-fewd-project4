@@ -1,0 +1,30 @@
+//********************************************************
+// Flexbox Mixin
+//********************************************************
+@mixin createflexbox(
+  $display:flex,
+  $diretion:null,
+  $wrap:null,
+  $justify:null
+){
+  display:$display;
+  flex-direction:$direction;
+  flex-wrap:$wrap;
+  justify-content:$justify;
+}
+
+
+//********************************************************
+// Media Query Mixin
+//********************************************************
+@mixin mq($breakpoint){
+  @media (min-width: $breakpoint){
+    @content;
+  }
+}
+
+@include mq($navbreak){
+  body{
+    color:green;
+  }
+}
