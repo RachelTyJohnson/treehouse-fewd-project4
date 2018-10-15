@@ -332,10 +332,4 @@ template {
   display: none;
 }
 
-@media (min-width: 768px) {
-  body {
-    color: green;
-  }
-}
-
 /*# sourceMappingURL=styles.css.map */
