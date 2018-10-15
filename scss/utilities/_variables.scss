@@ -3,45 +3,44 @@
 //********************************************************
 // Fonts
 //********************************************************
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,800');
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+$font-primary: 'Raleway', sans-serif;
+$font-quote: 'Kavivanar', cursive;
 
 //********************************************************
 // Breakpoints
 //********************************************************
-$breakpoints: (
-  'mobile': 480px;
-  'midpoint': 769px;
-  'desktop': 1400px;
-)
-
-
+$breakpoints : (
+  'navbreak':769px
+);
 
 //********************************************************
 // Colors
 //********************************************************
 //Brand
 $brandcolors:(
-  'primary':#58e1c1;
-  'link':#54defc;
-  'content':#828282;
-)
+  'primary':#58e1c1,
+  'link':#54defc,
+  'content':#828282
+);
 
 //Buttons
-$buttoncolors:(
-  'default':#51ddfc;
-  'success':#63cc82;
-  'error':#e4757a;
-  'warning':#fd7856;
-  'info':#927bc1;
-)
+$buttoncolors: (
+  'default':#51ddfc,
+  'success':#63cc82,
+  'error':#e4757a,
+  'warning':#fd7856,
+  'info':#927bc1
+);
 
 //Grid
-$gridcolors:(
-  'col12':#80e8d1;
-  'col8':#fd9f85;
-  'col7':#ec9fa3;
-  'col6':#3fabca;
-  'col5':#88d9a0;
-  'col4':#7ee6fd;
-  'col3':#deb2ee;
-)
+$gridcolors: (
+  'col12':#80e8d1,
+  'col8':#fd9f85,
+  'col7':#ec9fa3,
+  'col6':#3fabca,
+  'col5':#88d9a0,
+  'col4':#7ee6fd,
+  'col3':#deb2ee
+);
