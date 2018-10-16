@@ -45,7 +45,6 @@
 // Button Maker
 //********************************************************
 @mixin button($color){
-  width:100%;
   text-transform: uppercase;
   padding:15px;
   border:none;
@@ -55,13 +54,14 @@
   background:$color;
   cursor: pointer;
   @media (max-width:$navbreak){
+    width:100%;
     +*{
       margin-top:20px;
     }
   }
   @include makebigger();
   @include desktop{
-    
+    padding:10px 35px;
   }
 }
 

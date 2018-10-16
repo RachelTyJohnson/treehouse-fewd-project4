@@ -1,5 +1,6 @@
 .container{
   margin:$gutter;
+  padding-top:$gutter;
   @include desktop{
     max-width:$maxwidth;
     @include centerer;
@@ -31,6 +32,9 @@
       @include gridthemecolor(#{$i});
       @include desktop{
         width: percentage($target/$context);
+        @include createflexbox($wrap:wrap);
+        align-items: center;
+        justify-content: space-around;
       }
     }
 }
