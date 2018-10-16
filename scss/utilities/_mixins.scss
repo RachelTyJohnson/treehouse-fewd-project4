@@ -1,5 +1,5 @@
 //********************************************************
-// Flexbox Mixin
+// Flexbox Creator
 //********************************************************
 @mixin createflexbox(
   $display:flex,
@@ -14,12 +14,19 @@
   @content;
 }
 
+//********************************************************
+// Flexbox Grid THingy
+//********************************************************
+@mixin colflex($colsize){
+  flex: 1;
+  margin:5px;
+}
 
 //********************************************************
 // Media Query Mixin
 //********************************************************
-@mixin mq($breakpoint){
-  @media (min-width: $breakpoint){
+@mixin desktop{
+  @media (min-width:$navbreak){
     @content;
   }
 }
@@ -67,4 +74,16 @@
 //********************************************************
 @mixin trans($property){
   transition: $property $transitiontime $transitioneasing;
+}
+
+//********************************************************
+// Apply themecolor
+//********************************************************
+@mixin gridthemecolor($col){
+  &.theme__colors {
+  background: map-get($gridcolors,$col);
+  @include desktop{
+    text-align: center;
+  }
+  }
 }

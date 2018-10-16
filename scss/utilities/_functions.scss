@@ -1,1 +1,11 @@
-//Pixels to Percentage
+//********************************************************
+// Pixels to Percentage Magic-thing
+//********************************************************
+@function pixtoperc($target, $context:$maxwidth){
+  @return ($target/$context) * 100%;
+}
+
+@function gcontext($gcolwidth, $gcolcount, $ggutterwidth){
+  $gcontext: ($gcolwidth * $gcolcount) + ($ggutterwidth * ($gcolcount - 1));
+  @return $gcontext;
+}

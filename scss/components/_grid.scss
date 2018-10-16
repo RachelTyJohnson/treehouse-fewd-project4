@@ -1,46 +1,41 @@
 .container{
   margin:$gutter;
+  @include desktop{
+    max-width:$maxwidth;
+    @include centerer;
+  }
 }
 .grid__row {
-  @include createflexbox($wrap:wrap);
+  @include createflexbox($wrap:wrap, $direction:column, $justify:space-between);
   margin-bottom:40px;
   >*{
-    width:100%;
     padding:15px;
     margin:3px auto;
-    border-radius:$borderradius;
+    @media (max-width:$navbreak){
+      width:100%;
+    }
   }
   >.theme__colors{
     font-weight:600;
+    border-radius:$borderradius;
+  }
+  @include desktop{
+    flex-direction: row;
   }
 }
 
-.grid__col--3.theme__colors {
-  background: map-get($gridcolors,'col3');
+@for $i from 3 through $g-col-count {
+    $context: gcontext($g-col-width, $g-col-count, $g-gutter-width);
+    $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
+    .grid__col--#{$i}{
+      @include gridthemecolor(#{$i});
+      @include desktop{
+        width: percentage($target/$context);
+
+      }
+    }
 }
 
-.grid__col--4.theme__colors {
-  background: map-get($gridcolors,'col4');
+.centered {
+  @include centerer;
 }
-
-.grid__col--5.theme__colors {
-  background: map-get($gridcolors,'col5');
-}
-
-.grid__col--6.theme__colors {
-  background: map-get($gridcolors,'col6');
-}
-
-.grid__col--7.theme__colors {
-  background: map-get($gridcolors,'col7');
-}
-
-.grid__col--8.theme__colors {
-  background: map-get($gridcolors,'col8');
-}
-
-.grid__col--12.theme__colors {
-  background: map-get($gridcolors,'col12');
-}
-
-.centered {}

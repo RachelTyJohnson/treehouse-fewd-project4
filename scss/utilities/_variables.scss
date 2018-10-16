@@ -13,6 +13,14 @@ $navbreak:768px;
 
 
 //********************************************************
+// Grid Stuff
+//********************************************************
+$g-col-width: 40px;
+$g-gutter-width: 10px;
+$g-col-count: 12;
+$g-container-max-width:1000px;
+
+//********************************************************
 // General
 //********************************************************
 $gutter:30px;
@@ -20,6 +28,7 @@ $indent:20px;
 $borderradius:5px;
 $transitiontime: 0.2s;
 $transitioneasing: ease-in-out;
+$maxwidth:1000px;
 
 //********************************************************
 // Colors
@@ -42,11 +51,16 @@ $buttoncolors: (
 
 //Grid
 $gridcolors: (
-  'col12':#80e8d1,
-  'col8':#fd9f85,
-  'col7':#ec9fa3,
-  'col6':#3fabca,
-  'col5':#88d9a0,
-  'col4':#7ee6fd,
-  'col3':#deb2ee
+  '12':#80e8d1,
+  '8':#fd9f85,
+  '7':#ec9fa3,
+  '6':#3fabca,
+  '5':#88d9a0,
+  '4':#7ee6fd,
+  '3':#deb2ee
 );
+
+//********************************************************
+// Lists
+//********************************************************
+$buttonslist: ('default','success','error','warning','info');

@@ -3,6 +3,10 @@
   margin:0;
   padding:0;
   list-style: none;
+  @include desktop{
+    flex-direction:row;
+    float:right;
+  }
 }
 
 .nav__item{ //The LI
