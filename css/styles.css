@@ -383,6 +383,10 @@ template {
   margin-bottom: 15px;
 }
 
+.nav__item {
+  list-style: none;
+}
+
 .btn--default {
   width: 100%;
   text-transform: uppercase;
