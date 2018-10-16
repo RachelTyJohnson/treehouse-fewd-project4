@@ -31,7 +31,6 @@
       @include gridthemecolor(#{$i});
       @include desktop{
         width: percentage($target/$context);
-
       }
     }
 }

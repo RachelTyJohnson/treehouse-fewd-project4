@@ -576,6 +576,7 @@ template {
   display: block;
   margin: 0 auto;
   transition: transform 0.2s ease-in-out;
+  height: 100%;
 }
 .img--avatar:hover {
   transform: scale(1.03);
@@ -627,13 +628,14 @@ template {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
-.btn--default + * {
-  margin-top: 20px;
+@media (max-width: 768px) {
+  .btn--default + * {
+    margin-top: 20px;
+  }
 }
 .btn--default:hover {
   transform: scale(1.03);
 }
-
 .btn--success {
   width: 100%;
   text-transform: uppercase;
@@ -646,13 +648,14 @@ template {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
-.btn--success + * {
-  margin-top: 20px;
+@media (max-width: 768px) {
+  .btn--success + * {
+    margin-top: 20px;
+  }
 }
 .btn--success:hover {
   transform: scale(1.03);
 }
-
 .btn--error {
   width: 100%;
   text-transform: uppercase;
@@ -665,13 +668,14 @@ template {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
-.btn--error + * {
-  margin-top: 20px;
+@media (max-width: 768px) {
+  .btn--error + * {
+    margin-top: 20px;
+  }
 }
 .btn--error:hover {
   transform: scale(1.03);
 }
-
 .btn--warning {
   width: 100%;
   text-transform: uppercase;
@@ -684,13 +688,14 @@ template {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
-.btn--warning + * {
-  margin-top: 20px;
+@media (max-width: 768px) {
+  .btn--warning + * {
+    margin-top: 20px;
+  }
 }
 .btn--warning:hover {
   transform: scale(1.03);
 }
-
 .btn--info {
   width: 100%;
   text-transform: uppercase;
@@ -703,13 +708,14 @@ template {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
-.btn--info + * {
-  margin-top: 20px;
+@media (max-width: 768px) {
+  .btn--info + * {
+    margin-top: 20px;
+  }
 }
 .btn--info:hover {
   transform: scale(1.03);
 }
-
 .form__label--hidden {
   display: none;
 }

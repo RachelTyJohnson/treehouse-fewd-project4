@@ -54,10 +54,15 @@
   font-weight:bold;
   background:$color;
   cursor: pointer;
-  +*{
-    margin-top:20px;
+  @media (max-width:$navbreak){
+    +*{
+      margin-top:20px;
+    }
   }
   @include makebigger();
+  @include desktop{
+    
+  }
 }
 
 //********************************************************
