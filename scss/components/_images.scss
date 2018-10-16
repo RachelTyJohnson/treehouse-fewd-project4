@@ -1,0 +1,16 @@
+.img--logo{
+  @include centerer;
+  @include makebigger;
+}
+.img--frame{
+  @include centerer;
+  width:100%;
+  padding:12px;
+  border: 1px solid lighten( map-get($brandcolors,'content') , 35%);
+  @include makebigger;
+}
+
+.img--avatar{
+  @include centerer;
+  @include makebigger;
+}

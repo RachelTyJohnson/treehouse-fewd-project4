@@ -1,0 +1,24 @@
+.form {
+
+}
+
+.form__label--hidden {
+  display:none;
+}
+
+.form__input {
+  @include centerer;
+  width:95%;
+  padding:10px;
+  margin: 30px auto;
+  border:none;
+  border-bottom: 3px map-get($brandcolors, 'primary') solid;
+  @include trans(border-bottom);
+  &:focus{
+    outline: none;
+    border-bottom: 6px map-get($brandcolors, 'primary') solid;
+  }
+  &::placeholder{
+    font-weight:500;
+  }
+}

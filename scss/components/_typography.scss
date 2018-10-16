@@ -2,33 +2,38 @@
   font-family:$font-primary;
   color:map-get($brandcolors,'content');
   font-size:1.1em;
-  line-height:1.3;
 }
 
 .link{
   text-decoration: none;
   color: map-get($brandcolors, 'link');
   font-weight:bold;
+  @include trans(color);
   &:hover{
-    text-decoration: overline underline;
+    color: map-get($brandcolors, 'primary');
   }
 }
 
 .blockquote{
   font-family:$font-quote;
-  border-left: 3px solid map-get($brandcolors,'primary');
+  border-left: 6px solid map-get($brandcolors,'primary');
   padding-left:20px;
-  margin-left:$indent;
+  padding-left:$indent;
   margin-right:10px;
   font-size:1.4em;
+  @include trans(border-left);
+  &:hover{
+    border-left: 10px solid map-get($brandcolors,'primary');
+  }
 }
 
 .headline--primary{
   color:map-get($brandcolors,'primary');
-  margin-left: $indent;
+  padding-left: $indent;
+  font-size:1.9em;
 }
 
 .headline--secondary{
   font-weight:300;
-  margin-bottom:15px;
+  margin-bottom:50px;
 }

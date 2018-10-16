@@ -25,18 +25,46 @@
 }
 
 //********************************************************
-// Media Query Mixin
+// Make Slightly bigger on hover
+//********************************************************
+@mixin makebigger(){
+  @include trans(transform);
+  &:hover{
+    transform:scale(1.03);
+  }
+}
+
+//********************************************************
+// Button Maker
 //********************************************************
 @mixin button($color){
   width:100%;
   text-transform: uppercase;
-  padding:10px;
+  padding:15px;
   border:none;
   border-radius:$borderradius;
   color:white;
   font-weight:bold;
   background:$color;
+  cursor: pointer;
   +*{
     margin-top:20px;
   }
+  @include makebigger();
+}
+
+//********************************************************
+// Horizontally Center Content
+//********************************************************
+@mixin centerer(){
+  display:block;
+  margin: 0 auto;
+  @content;
+}
+
+//********************************************************
+// Transition Mixin
+//********************************************************
+@mixin trans($property){
+  transition: $property $transitiontime $transitioneasing;
 }

@@ -10,26 +10,37 @@
     margin:3px auto;
     border-radius:$borderradius;
   }
+  >.theme__colors{
+    font-weight:600;
+  }
 }
 
-.grid__col--3.theme__colors {}
+.grid__col--3.theme__colors {
+  background: map-get($gridcolors,'col3');
+}
 
-.grid__col--4 {}
+.grid__col--4.theme__colors {
+  background: map-get($gridcolors,'col4');
+}
 
-.grid__col--5 {}
+.grid__col--5.theme__colors {
+  background: map-get($gridcolors,'col5');
+}
 
-.grid__col--6 {}
+.grid__col--6.theme__colors {
+  background: map-get($gridcolors,'col6');
+}
 
-.grid__col--7 {}
+.grid__col--7.theme__colors {
+  background: map-get($gridcolors,'col7');
+}
 
-.grid__col--8 {}
+.grid__col--8.theme__colors {
+  background: map-get($gridcolors,'col8');
+}
 
-.grid__col--9 {}
-
-.grid__col--10 {}
-
-.grid__col--11 {}
-
-.grid__col--12 {}
+.grid__col--12.theme__colors {
+  background: map-get($gridcolors,'col12');
+}
 
 .centered {}
