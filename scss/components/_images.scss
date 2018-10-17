@@ -1,5 +1,5 @@
 .img--logo{
-  @include centerer;
+  @extend %centerer;
   @include makebigger;
 }
 .img--frame{
@@ -11,7 +11,7 @@
 }
 
 .img--avatar{
-  @include centerer;
+  @extend %centerer;
   @include makebigger;
 
 }
