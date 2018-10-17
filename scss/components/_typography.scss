@@ -2,39 +2,40 @@
   font-family:$font-primary;
   color:map-get($brandcolors,'content');
   font-size:1.1em;
-}
-
-.link{
-  text-decoration: none;
-  color: map-get($brandcolors, 'link');
-  font-weight:bold;
-  @include trans(color);
-  &:hover{
-    color: map-get($brandcolors, 'primary');
+  
+  .link{
+    text-decoration: none;
+    color: map-get($brandcolors, 'link');
+    font-weight:bold;
+    @include trans(color);
+    &:hover{
+      color: map-get($brandcolors, 'primary');
+    }
   }
-}
 
-.blockquote{
-  font-family:$font-quote;
-  border-left: 6px solid map-get($brandcolors,'primary');
-  padding-left:20px;
-  padding-left:$indent;
-  margin-right:10px;
-  font-size:1.4em;
-  @include trans(border-left);
-  &:hover{
-    border-left: 10px solid map-get($brandcolors,'primary');
+  .blockquote{
+    font-family:$font-quote;
+    border-left: 6px solid map-get($brandcolors,'primary');
+    padding-left:20px;
+    padding-left:$indent;
+    margin-right:10px;
+    font-size:1.4em;
+    @include trans(border-left);
+    &:hover{
+      border-left: 10px solid map-get($brandcolors,'primary');
+    }
   }
-}
 
-.headline--primary{
-  color:map-get($brandcolors,'primary');
-  padding-left: $indent;
-  font-size:1.9em;
-  line-height:1.2;
-}
+  .headline--primary{
+    color:map-get($brandcolors,'primary');
+    padding-left: $indent;
+    font-size:1.9em;
+    line-height:1.2;
+  }
 
-.headline--secondary{
-  font-weight:300;
-  margin-bottom:50px;
+  .headline--secondary{
+    font-weight:300;
+    margin-bottom:50px;
+  }
+
 }

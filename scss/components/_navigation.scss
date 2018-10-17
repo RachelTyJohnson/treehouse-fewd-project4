@@ -7,24 +7,24 @@
     flex-direction:row;
 
   }
-}
 
-.nav__item{ //The LI
-  text-align:center;
-  a{
-    display:inline-block;
-    color:map-get($brandcolors,'content');
-    text-decoration: none;
-    padding:15px;
-    width:100%;
-    background:none;
-    border-radius: $borderradius;
-    @include trans($property:color);
-    @include trans(background);
-    &:hover{
-      background:map-get($brandcolors,'primary');
-      color:white;
-      border-radius:$borderradius;
+  &__item{
+    text-align:center;
+    a{
+      display:inline-block;
+      color:map-get($brandcolors,'content');
+      text-decoration: none;
+      padding:15px;
+      width:100%;
+      background:none;
+      border-radius: $borderradius;
+      @include trans($property:color);
+      @include trans(background);
+      &:hover{
+        background:map-get($brandcolors,'primary');
+        color:white;
+        border-radius:$borderradius;
+      }
     }
   }
 }

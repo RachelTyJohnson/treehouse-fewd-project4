@@ -5,40 +5,41 @@
     max-width:$maxwidth;
     @include centerer;
   }
-}
-.grid__row {
-  @include createflexbox($wrap:wrap, $direction:column, $justify:space-between);
-  margin-bottom:40px;
-  >*{
-    padding:15px;
-    margin:3px auto;
-    @include mobile{
-      width:100%;
-    }
-  }
-  >.theme__colors{
-    font-weight:600;
-    border-radius:$borderradius;
-  }
-  @include desktop{
-    flex-direction: row;
-  }
-}
 
-@for $i from 3 through $g-col-count {
-    $context: gcontext($g-col-width, $g-col-count, $g-gutter-width);
-    $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
-    .grid__col--#{$i}{
-      @include gridthemecolor(#{$i});
-      @include desktop{
-        width: percentage($target/$context);
-        @include createflexbox($wrap:wrap);
-        align-items: center;
-        justify-content: space-around;
+  .grid__row {
+    @include createflexbox($wrap:wrap, $direction:column, $justify:space-between);
+    margin-bottom:40px;
+    >*{
+      padding:15px;
+      margin:3px auto;
+      @include mobile{
+        width:100%;
       }
     }
-}
+    >.theme__colors{
+      font-weight:600;
+      border-radius:$borderradius;
+    }
+    @include desktop{
+      flex-direction: row;
+    }
+  }
+  
+  @for $i from 3 through $g-col-count {
+      $context: gcontext($g-col-width, $g-col-count, $g-gutter-width);
+      $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
+      .grid__col--#{$i}{
+        @include gridthemecolor(#{$i});
+        @include desktop{
+          width: percentage($target/$context);
+          @include createflexbox($wrap:wrap);
+          align-items: center;
+          justify-content: space-around;
+        }
+      }
+  }
 
-.centered {
-  @include centerer;
+  .centered {
+    @include centerer;
+  }
 }
