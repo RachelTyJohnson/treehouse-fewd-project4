@@ -795,6 +795,10 @@ template {
   }
 }
 
+.btn--default[type=submit] {
+  width: 100%;
+}
+
 .form {
   width: 100%;
 }

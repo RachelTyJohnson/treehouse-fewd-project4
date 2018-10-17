@@ -3,3 +3,7 @@
     @include button(map-get($buttoncolors, #{$button}));
   }
 }
+
+.btn--default[type="submit"]{
+  width:100%;
+}
