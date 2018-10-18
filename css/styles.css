@@ -337,7 +337,7 @@ template {
   line-height: 1.5;
 }
 
-.form__input, .img--avatar, .img--logo, .container .centered {
+.form__input, .img--logo, .img--avatar, .container .centered {
   display: block;
   margin: 0 auto;
 }
@@ -576,29 +576,21 @@ template {
   margin-bottom: 50px;
 }
 
-.img--logo {
+.img--logo, .img--avatar {
   transition: transform 0.2s ease-in-out;
 }
-.img--logo:hover {
+.img--logo:hover, .img--avatar:hover {
   transform: scale(1.03);
 }
-
 .img--frame {
   display: block;
   margin: 0 auto;
+  transition: transform 0.2s ease-in-out;
   width: 100%;
   padding: 12px;
   border: 1px solid #dbdbdb;
-  transition: transform 0.2s ease-in-out;
 }
 .img--frame:hover {
-  transform: scale(1.03);
-}
-
-.img--avatar {
-  transition: transform 0.2s ease-in-out;
-}
-.img--avatar:hover {
   transform: scale(1.03);
 }
 
